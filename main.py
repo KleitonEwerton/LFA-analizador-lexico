@@ -19,6 +19,8 @@ class Graph:
     def __init__(self):
         self.nodes = []
         self.edges = []
+        self.finals = []
+        self.symbols = []
 
     def add_node(self, name):
         node = Node(name)
@@ -118,6 +120,26 @@ class Graph:
             return []
 
         return path
+    
+# Função para atribuir as transições ao grafo
+def atribuir_transicoes_grafo(graph, transicoes):
+    for transicao in transicoes:
+        origem, destino = transicao.split('->')
+        graph.add_edge(origem, destino)
+
+def ler_definicao_grafo(grafh,nome_arquivo):
+    with open(nome_arquivo, 'r') as arquivo:
+        definicao = arquivo.readlines()
+        grafh.symbols=definicao[0].strip().split(',')
+        nos = definicao[1].strip().split(',')
+        transicoes = definicao[2].strip().split(',')
+        grafh.initial=definicao[3].strip().split(',')
+        atribuir_transicoes_grafo(grafh, transicoes)
+        finais = definicao[4].strip().split(',')
+        grafh.add_nodes_from(nos)
+        grafh.finals=finais
+        
+    return nos, transicoes
 
 
 
