@@ -1,5 +1,5 @@
 # Analizador Lexíco
-No âmbito da disciplina de Linguagens Formais e Autômatos (LFA), foi desenvolvido um projeto com o objetivo de criar um analisador léxico para diversas funcionalidades. O projeto foi concebido e implementado pelos alunos Kleiton e Arthur.
+No âmbito da disciplina de Linguagens Formais e Autômatos (LFA), foi desenvolvido um projeto com o objetivo de criar um analisador léxico para diversas funcionalidades. O projeto foi concebido e implementado pelos alunos Kleiton Ewerton de Oliveira e Arthur Monteiro Pereira.
 
 O projeto teve como propósito desenvolver um analisador léxico capaz de reconhecer e classificar corretamente os tokens presentes no código fonte. Para isso, foram aplicados conceitos e técnicas estudados na disciplina LFA, como a definição de gramáticas regulares, a construção de autômatos finitos determinísticos (AFDs) e a utilização de expressões regulares para o reconhecimento dos padrões léxicos.
 
