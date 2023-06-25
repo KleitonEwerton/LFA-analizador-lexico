@@ -50,7 +50,7 @@ class Afd:
         self.initial = node
 
     def visualize_graph(self):
-        print("Graph visualization:")
+        print("\n\nVisualization:")
         for edge in self.edges:
             source_name = edge.source.name
             target_name = edge.target.name
@@ -78,7 +78,7 @@ class Afd:
                     break
 
             if not valid_transition:
-                print(f"Não existe transição valida. Token '{char}', não encontrada transição para o estado {current_node.name}")
+                print(f"\nNão existe transição valida. Token '{char}', transição não encontrada para o estado {current_node.name}")
                 print("")
 
                 return []
